@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soporte · Profesor IA Matemáticas</title>
+  <meta name="description" content="Canales de ayuda, reporte de errores, preguntas frecuentes, limitaciones y estado de la compilación PDF de Profesor IA Matemáticas.">
+  <meta name="author" content="William Jiménez">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <div class="contenedor encabezado__fila">
+      <a class="marca" href="index.html" aria-label="Profesor IA Matemáticas, ir al inicio">
+        <span class="marca__nombre">Profesor IA Matemáticas<span aria-hidden="true">.</span></span>
+        <span class="marca__sub">Clases, guías y PDF con IA</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="soporte.html" aria-current="page">Soporte</a></li>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <li><a href="terminos.html">Términos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <div class="documento">
+      <div class="contenedor documento__cuerpo">
+        <p class="etiqueta">Ayuda</p>
+        <h1>Soporte</h1>
+        <p class="entradilla">Cómo obtener ayuda con Profesor IA Matemáticas, reportar errores y conocer las limitaciones actuales.</p>
+
+        <h2 id="canales">Canales de ayuda</h2>
+        <ul>
+          <li><strong>GitHub Issues (canal principal).</strong> Los errores, dudas y sugerencias se reciben en la sección de incidencias del repositorio público del sitio: <a href="https://github.com/Williamajg80/profesor-ia-matematicas-web/issues">github.com/Williamajg80/profesor-ia-matematicas-web/issues</a>. Para crear una incidencia se necesita una cuenta gratuita de GitHub.</li>
+          <li><strong>Esta página.</strong> Reúne las preguntas frecuentes y el estado actualizado de las funciones.</li>
+        </ul>
+        <p>Las respuestas se dan en la medida de lo posible y sin un plazo garantizado, ya que se trata de un proyecto educativo individual.</p>
+
+        <div class="aviso" role="note">
+          <p class="aviso__titulo">Las incidencias de GitHub son públicas</p>
+          <p>Cualquier persona puede leer lo que escriba. No incluya datos personales, información de estudiantes, calificaciones, contraseñas ni documentos confidenciales.</p>
+        </div>
+
+        <h2 id="reportar">Cómo reportar un error</h2>
+        <ol>
+          <li>Abra <a href="https://github.com/Williamajg80/profesor-ia-matematicas-web/issues">GitHub Issues</a> y pulse «New issue».</li>
+          <li>Escriba un título breve que describa el problema.</li>
+          <li>Indique qué estaba haciendo, qué esperaba que ocurriera y qué ocurrió.</li>
+          <li>Si aplica, añada un fragmento mínimo del texto o del código LaTeX que reproduce el problema, sin datos personales.</li>
+          <li>Indique la fecha aproximada y, si lo sabe, el navegador o la aplicación que usaba.</li>
+        </ol>
+
+        <h2 id="preguntas">Preguntas frecuentes</h2>
+        <details>
+          <summary>¿Qué es Profesor IA Matemáticas?</summary>
+          <p>Es un complemento de inteligencia artificial que apoya la planificación de clases, las secuencias didácticas, las guías, los talleres, las evaluaciones y la elaboración de documentos académicos en LaTeX.</p>
+        </details>
+        <details>
+          <summary>¿El complemento genera archivos PDF?</summary>
+          <p>Todavía no mediante el servidor MCP. La compilación está deshabilitada por seguridad. El complemento entrega el código LaTeX, que puede compilarse en Overleaf o en una instalación local de LaTeX.</p>
+        </details>
+        <details>
+          <summary>¿Puedo usar el código LaTeX en Overleaf?</summary>
+          <p>Sí. Copie el código en un proyecto de Overleaf y compílelo allí. Si aparece un error de compilación, puede reportarlo con el fragmento que lo produce.</p>
+        </details>
+        <details>
+          <summary>¿Los contenidos generados son siempre correctos?</summary>
+          <p>No. Los contenidos generados con IA pueden contener errores matemáticos, de notación o pedagógicos. Revíselos siempre antes de usarlos con estudiantes.</p>
+        </details>
+        <details>
+          <summary>¿Es un producto oficial de OpenAI?</summary>
+          <p>No. Es un proyecto independiente desarrollado por William Jiménez y no ha sido aprobado ni respaldado por OpenAI.</p>
+        </details>
+        <details>
+          <summary>¿Tiene costo?</summary>
+          <p>Este sitio y el canal de soporte son gratuitos. El uso del complemento puede requerir una cuenta en la plataforma donde se utiliza, sujeta a las condiciones de esa plataforma.</p>
+        </details>
+        <details>
+          <summary>¿Qué hago con una duda sobre privacidad?</summary>
+          <p>Consulte la <a href="privacidad.html">política de privacidad</a>. Si su consulta incluye información personal, no la publique en una incidencia; abra una incidencia solicitando un medio de contacto privado.</p>
+        </details>
+
+        <h2 id="limitaciones">Limitaciones actuales</h2>
+        <ul>
+          <li>La compilación de PDF mediante el servidor MCP está deshabilitada.</li>
+          <li>Los resultados dependen del modelo de IA y pueden contener errores; requieren revisión humana.</li>
+          <li>El servidor MCP se aloja en un servicio en la nube y puede tener interrupciones o demoras al iniciar.</li>
+          <li>El soporte es individual y no tiene tiempos de respuesta garantizados.</li>
+          <li>El complemento está pensado para usarse en español.</li>
+        </ul>
+
+        <h2 id="estado-pdf">Estado de la compilación PDF</h2>
+        <p><span class="estado">Deshabilitada</span></p>
+        <p>La herramienta <code>compilar_latex</code> del servidor MCP no ejecuta documentos. Cuando se invoca, responde que la compilación está deshabilitada hasta configurar un servicio aislado. Esta decisión evita ejecutar código LaTeX arbitrario en un servidor expuesto a Internet. La función solo se habilitará cuando exista un entorno de compilación aislado, efímero y con límites de recursos.</p>
+        <p class="meta">Estado revisado el 14 de octubre de 2026.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__fila">
+        <div>
+          <p class="pie__marca">Profesor IA Matemáticas</p>
+          <p style="margin:0">Complemento educativo desarrollado por William Jiménez · Versión 1.0.0</p>
+        </div>
+        <nav aria-label="Enlaces del pie de página">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="soporte.html">Soporte</a></li>
+            <li><a href="privacidad.html">Política de privacidad</a></li>
+            <li><a href="terminos.html">Términos de servicio</a></li>
+            <li><a href="https://github.com/Williamajg80/profesor-ia-matematicas-web/issues">Reportar un problema</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="pie__nota">Profesor IA Matemáticas es un proyecto educativo independiente. No es un producto de OpenAI ni ha sido aprobado, patrocinado o respaldado por OpenAI. Este sitio no usa cookies, analítica ni rastreadores. Los textos y el diseño del sitio se publican bajo la licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

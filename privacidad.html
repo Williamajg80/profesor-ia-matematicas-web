@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad · Profesor IA Matemáticas</title>
+  <meta name="description" content="Política de privacidad de Profesor IA Matemáticas: información tratada, servidor MCP, registros técnicos, proveedores y medidas de seguridad.">
+  <meta name="author" content="William Jiménez">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="encabezado">
+    <div class="contenedor encabezado__fila">
+      <a class="marca" href="index.html" aria-label="Profesor IA Matemáticas, ir al inicio">
+        <span class="marca__nombre">Profesor IA Matemáticas<span aria-hidden="true">.</span></span>
+        <span class="marca__sub">Clases, guías y PDF con IA</span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="soporte.html">Soporte</a></li>
+          <li><a href="privacidad.html" aria-current="page">Privacidad</a></li>
+          <li><a href="terminos.html">Términos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <div class="documento">
+      <div class="contenedor documento__cuerpo">
+        <p class="etiqueta">Documento legal</p>
+        <h1>Política de privacidad</h1>
+        <p class="meta">Última actualización: 14 de octubre de 2026 · Versión 1.0</p>
+        <p>Esta política explica qué información puede tratarse cuando se usa el complemento Profesor IA Matemáticas y este sitio web. Describe solo prácticas que el desarrollador ha podido comprobar en el código y la configuración actuales del proyecto.</p>
+
+        <nav class="indice" aria-label="Contenido de la política">
+          <p>Contenido</p>
+          <ol>
+            <li><a href="#responsable">Quién desarrolla el complemento</a></li>
+            <li><a href="#informacion">Información que pueden introducir los usuarios</a></li>
+            <li><a href="#mcp">Información enviada al servidor MCP</a></li>
+            <li><a href="#finalidad">Para qué se usa la información</a></li>
+            <li><a href="#registros">Registros técnicos</a></li>
+            <li><a href="#proveedores">Proveedores externos</a></li>
+            <li><a href="#sitio">Este sitio web</a></li>
+            <li><a href="#seguridad">Medidas de seguridad</a></li>
+            <li><a href="#recomendaciones">Recomendaciones para los usuarios</a></li>
+            <li><a href="#contacto">Consultas sobre privacidad</a></li>
+            <li><a href="#limitaciones">Limitaciones</a></li>
+            <li><a href="#cambios">Cambios en esta política</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="responsable">1. Quién desarrolla el complemento</h2>
+        <p>Profesor IA Matemáticas es un proyecto educativo individual desarrollado por William Jiménez. No es un producto de OpenAI ni ha sido aprobado o respaldado por OpenAI.</p>
+
+        <h2 id="informacion">2. Información que pueden introducir los usuarios</h2>
+        <p>Para preparar materiales, los usuarios pueden escribir en la conversación información como:</p>
+        <ul>
+          <li>temas, niveles, objetivos y condiciones de un curso;</li>
+          <li>textos, ejercicios, enunciados y código LaTeX;</li>
+          <li>comentarios y decisiones sobre las propuestas del complemento.</li>
+        </ul>
+        <p>El complemento no necesita datos personales de estudiantes ni de terceros para funcionar. Le pedimos no introducir nombres de estudiantes, calificaciones, documentos de identidad, datos de salud ni otra información sensible.</p>
+        <p>Las conversaciones ocurren en la plataforma de OpenAI (por ejemplo, ChatGPT) y son tratadas por OpenAI según sus propias políticas. El desarrollador del complemento no tiene acceso al historial de conversaciones de los usuarios en esa plataforma.</p>
+
+        <h2 id="mcp">3. Información enviada al servidor MCP</h2>
+        <p>El complemento puede usar un servidor MCP del proyecto, alojado en Render en <code>profesor-ia-matematicas-mcp.onrender.com</code>. El asistente solo envía información al servidor cuando invoca una de sus herramientas:</p>
+        <ul>
+          <li><code>estado_compilacion</code>: no recibe contenido del usuario.</li>
+          <li><code>compilar_latex</code>: recibe un parámetro de texto con el código LaTeX que se quiere compilar.</li>
+        </ul>
+        <p>En la versión actual, el código del servidor no compila, no guarda en archivos o bases de datos y no devuelve el código LaTeX recibido. Solo responde que la compilación está deshabilitada. El servidor no tiene base de datos.</p>
+        <p>Como en cualquier conexión web, el servidor y la infraestructura de alojamiento también reciben datos técnicos de la petición, como la dirección IP de origen, la fecha y hora, la ruta solicitada y las cabeceras HTTP. El protocolo MCP asigna además un identificador de sesión técnico que el servidor mantiene en memoria mientras la sesión está activa.</p>
+
+        <h2 id="finalidad">4. Para qué se usa la información</h2>
+        <ul>
+          <li>Responder a las solicitudes de las herramientas del servidor MCP.</li>
+          <li>Mantener el funcionamiento técnico, diagnosticar errores y proteger el servicio frente a usos abusivos.</li>
+        </ul>
+        <p>La información no se vende, no se usa con fines publicitarios y el desarrollador no la usa para entrenar modelos de inteligencia artificial.</p>
+
+        <h2 id="registros">5. Registros técnicos</h2>
+        <p>El servidor usa un servidor web estándar (Uvicorn) que, en su configuración predeterminada, escribe registros de acceso con la dirección IP de origen, el método y la ruta de la petición y el código de respuesta. Esos registros no incluyen el contenido LaTeX enviado a las herramientas.</p>
+        <p>Render recoge y conserva los registros del servicio durante el tiempo que establezca su plan y sus políticas. Además, Render y sus proveedores de red pueden mantener sus propios registros técnicos y de seguridad. El desarrollador puede consultar esos registros desde el panel de Render solo para fines de diagnóstico y seguridad.</p>
+
+        <h2 id="proveedores">6. Proveedores externos</h2>
+        <div class="tabla-envoltura">
+          <table>
+            <thead><tr><th scope="col">Proveedor</th><th scope="col">Función</th><th scope="col">Política</th></tr></thead>
+            <tbody>
+              <tr><td>OpenAI</td><td>Plataforma en la que se usa el complemento; procesa las conversaciones.</td><td><a href="https://openai.com/policies/privacy-policy/">Política de privacidad de OpenAI</a></td></tr>
+              <tr><td>Render</td><td>Alojamiento del servidor MCP y de sus registros técnicos.</td><td><a href="https://render.com/privacy">Política de privacidad de Render</a></td></tr>
+              <tr><td>GitHub</td><td>Alojamiento de este sitio web (GitHub Pages) y del canal de soporte (GitHub Issues).</td><td><a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">Declaración de privacidad de GitHub</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Si usa Overleaf u otro servicio para compilar el código LaTeX, ese uso queda fuera del complemento y se rige por las políticas de ese servicio.</p>
+
+        <h2 id="sitio">7. Este sitio web</h2>
+        <p>Este sitio es estático. No usa cookies, formularios, herramientas de analítica, publicidad ni rastreadores, y no carga tipografías ni scripts de terceros. GitHub, como proveedor de alojamiento, puede registrar datos técnicos de las visitas, como la dirección IP, por motivos de seguridad y funcionamiento.</p>
+        <p>Las incidencias que se publican en GitHub Issues son públicas y quedan asociadas a la cuenta de GitHub de quien las escribe.</p>
+
+        <h2 id="seguridad">8. Medidas de seguridad</h2>
+        <ul>
+          <li>Las conexiones con el servidor MCP y con este sitio se hacen mediante HTTPS.</li>
+          <li>La compilación de LaTeX está deshabilitada para no ejecutar código arbitrario en un servidor expuesto a Internet.</li>
+          <li>El servidor no guarda en archivos o bases de datos el contenido que recibe.</li>
+          <li>El repositorio del servidor es privado y no contiene credenciales.</li>
+          <li>El servidor tiene un alcance mínimo: dos herramientas, sin acceso a cuentas ni archivos de los usuarios.</li>
+        </ul>
+        <p>Ningún sistema es completamente seguro, por lo que no se puede garantizar una seguridad absoluta. Actualmente, el servidor MCP no exige autenticación porque sus herramientas no acceden a información de los usuarios ni ejecutan código. Se añadirán controles adicionales antes de habilitar funciones que lo requieran.</p>
+
+        <h2 id="recomendaciones">9. Recomendaciones para los usuarios</h2>
+        <ul>
+          <li>No introduzca datos personales de estudiantes ni información confidencial.</li>
+          <li>No incluya contraseñas, claves ni credenciales en el código LaTeX o en los mensajes.</li>
+          <li>No publique información personal en GitHub Issues.</li>
+        </ul>
+
+        <h2 id="contacto">10. Consultas sobre privacidad</h2>
+        <p>Para preguntas o inquietudes sobre privacidad, abra una incidencia en <a href="https://github.com/Williamajg80/profesor-ia-matematicas-web/issues">GitHub Issues</a> con el título «Privacidad». No escriba datos personales en la incidencia; si su consulta los requiere, solicite en ella un medio de contacto privado. Para solicitudes sobre los datos de sus conversaciones, diríjase a OpenAI mediante sus canales oficiales.</p>
+
+        <h2 id="limitaciones">11. Limitaciones</h2>
+        <p>Esta política se refiere al complemento Profesor IA Matemáticas, a su servidor MCP y a este sitio. No sustituye las políticas de OpenAI, Render, GitHub u otros servicios que intervengan, sobre cuyo tratamiento de datos el desarrollador no tiene control. Este proyecto no declara certificaciones de seguridad ni de cumplimiento normativo.</p>
+
+        <h2 id="cambios">12. Cambios en esta política</h2>
+        <p>Esta política se actualizará cuando cambie el funcionamiento del complemento, en especial si se habilita la compilación de PDF. La fecha de la última actualización aparece al inicio de esta página, y el historial de cambios puede consultarse en el <a href="https://github.com/Williamajg80/profesor-ia-matematicas-web/commits/main">repositorio público del sitio</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__fila">
+        <div>
+          <p class="pie__marca">Profesor IA Matemáticas</p>
+          <p style="margin:0">Complemento educativo desarrollado por William Jiménez · Versión 1.0.0</p>
+        </div>
+        <nav aria-label="Enlaces del pie de página">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="soporte.html">Soporte</a></li>
+            <li><a href="privacidad.html">Política de privacidad</a></li>
+            <li><a href="terminos.html">Términos de servicio</a></li>
+            <li><a href="https://github.com/Williamajg80/profesor-ia-matematicas-web/issues">Reportar un problema</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="pie__nota">Profesor IA Matemáticas es un proyecto educativo independiente. No es un producto de OpenAI ni ha sido aprobado, patrocinado o respaldado por OpenAI. Este sitio no usa cookies, analítica ni rastreadores. Los textos y el diseño del sitio se publican bajo la licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
